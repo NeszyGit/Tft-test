@@ -15,6 +15,7 @@ const fetchSumData = (name) => {
   });
 }
 
+
 $(function() {
     $('#fetch-sum').on('blur', (e) => {
       fetchSumData(e.target.value);
