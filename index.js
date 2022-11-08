@@ -12,8 +12,8 @@ const fetchSumData = (name) => {
   });
 }
 
-function () {
+document.addEventListener('DOMContentLoaded', function() {
   $('#fetch-sum').on('blur', (e) => {
     fetchSumData(e.target.value);
   });
-}
+}, false);
