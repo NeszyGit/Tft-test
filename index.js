@@ -1,5 +1,4 @@
-// import $ from "https://cdn.skypack.dev/jquery@3.6.1";
-import {$,jQuery} from 'jquery';
+import $ from "https://cdn.skypack.dev/jquery@3.6.1";
 
 const apiKey = 'RGAPI-8ac28520-2e56-433a-8381-cbc8dbbf85de';
 
@@ -14,7 +13,6 @@ const fetchSumData = (name) => {
     });
   });
 }
-
 
 $(function() {
     $('#fetch-sum').on('blur', (e) => {
