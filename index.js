@@ -1,5 +1,3 @@
-import $ from "https://cdn.skypack.dev/jquery@3.6.1";
-
 const apiKey = 'RGAPI-8ac28520-2e56-433a-8381-cbc8dbbf85de';
 
 const apiEndPoint = 'https://euw1.api.riotgames.com/tft/summoner/v1/summoners/by-name/';
@@ -14,8 +12,8 @@ const fetchSumData = (name) => {
   });
 }
 
-$(function() {
-    $('#fetch-sum').on('blur', (e) => {
-      fetchSumData(e.target.value);
-    });
-});
+function () {
+  $('#fetch-sum').on('blur', (e) => {
+    fetchSumData(e.target.value);
+  });
+}
